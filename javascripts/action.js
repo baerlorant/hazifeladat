@@ -1,5 +1,7 @@
 function keyup(field) {
-            var last = field.value.charAt( field.value.length-1 );
+            //var last = field.value.charAt( field.value.length-1 );
+            var c= String.fromCharCode(field.keyCode);
+            var last = c.match(/\w/);
             if( last == "s"){
                 //alert("A teljel szöveg: " + field.value);
                 document.getElementById('eredmeny').value = field.value;

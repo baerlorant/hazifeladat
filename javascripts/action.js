@@ -3,11 +3,11 @@ function keyup(field) {
             var c= String.fromCharCode(field.keyCode);
             var last = c.match(/\w/);
             if( last == "s"){
-                //alert("A teljel szöveg: " + field.value);
+                alert("A teljel szöveg: " + field.value);
                 document.getElementById('eredmeny').value = field.value;
             }
             else{
-                //alert("A leütött karakter:" + last);
+                alert("A leütött karakter:" + last);
                 document.getElementById('eredmeny').value = last;
             }
         }

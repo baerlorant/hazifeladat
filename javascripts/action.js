@@ -1,10 +1,8 @@
-var global = "";
 function keyup(field) {
-            global = global + field.value;
-            if( field.value == "s"){
-                alert("A teljel szöveg: " + global);
+            if( field.which == "s"){
+                alert("A teljel szöveg: " + field.value);
             }
             else{
-                alert("A leütött karakter:" + field.value);
+                alert("A leütött karakter:" + field.which);
             }
         }

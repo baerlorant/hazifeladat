@@ -1,8 +1,9 @@
 function keyup(field) {
-            if( field.which == "s"){
+            var last = field.value.charAt( field.value.length-1 );
+            if( last == "s"){
                 alert("A teljel szöveg: " + field.value);
             }
             else{
-                alert("A leütött karakter:" + field.which);
+                alert("A leütött karakter:" + last);
             }
         }

@@ -1,7 +1,7 @@
 var global = "";
 function keyup(field) {
             global = global + field.value;
-            if( field.value == "s){
+            if( field.value == "s"){
                 alert("A teljel szöveg: " + global);
             }
             else{

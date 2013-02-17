@@ -31,23 +31,39 @@
       <section id="main_content" class="inner">
         
         <div class="menuBar">
-           <img class="logo"/>
+           
             <div class="nav"> 
                 <ul>
-                    <li>Menu1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
+                    <li>Kezdőlap</li>
+                    <li>Cikk</li>
+                    <li>Kapcsolat</li>
                 </ul> 
             </div>
         </div>
-      
-        <h3>Baer Lorant webtervezes gyak oldala</h3>
-        <h3>Lesz itt még más is!</h3>
         
-        <form name="f1">
-            <input type="text" onkeyup="keyup(this);" name="text1">
-            <input type="text" id="eredmeny" name="eredmeny" disabled>
-        </form>
+        
+        <?php
+              if( isset($_GET["oldal"]) )
+              {
+                  if($_GET["oldal"] == 'cikk')
+                  {
+                      echo "<form name="f1"><input type="text" onkeyup="keyup(this);" name="text1"><input type="text" id="eredmeny" name="eredmeny" disabled></form>";
+                  }
+                  elseif($_GET["oldal"] == 'kapcsolat')
+                  {
+                      echo "<h3>Báer Lóránt--baer.lorant{kukac}gmail.com</h3>";
+                  }
+              }
+              else
+              {
+                  echo "<h3>Baer Lorant webtervezes gyak oldala</h3><h3>Lesz itt még más is!</h3>";
+              }
+        ?>
+      
+        
+        
+        
+        
         
         
         

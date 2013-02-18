@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', myHandler);
 
 function changefizz(field) {
             var out = '';
-            if(isNaN(field.value)){
+            if( !isNaN(field.value) ){
                         if( parseInt(field.value) % 3 == 0)
                             out = out+'fiz';
                         if( parseInt(field.value) % 5 == 0)

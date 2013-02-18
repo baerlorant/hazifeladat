@@ -70,5 +70,24 @@ var myHandler = (function () {
 document.addEventListener('DOMContentLoaded', myHandler);
 
 
+
+
+function changefizz(field) {
+            var out = '';
+            if(isNaN(field.value)){
+                        if( parseInt(field.value) % 3 == 0)
+                            out = out.'fiz';
+                        if( parseInt(field.value) % 5 == 0)
+                            out = out.'buzz';
+                        if( parseInt(field.value) % 7 == 0)
+                            out = out.'bizz';
+            }
+            else{
+                        out = 'A bemenet nem szám';
+            }
+            document.getElementById('fizz').value = out;
+            
+}
+
     
 

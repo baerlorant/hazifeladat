@@ -43,12 +43,28 @@ function keyup3(field) {
 
 
 var myHandler = (function () {
-  var bemenet, output;
+  var bemenet;
   
   function gombnyomas(msg) {
-    alert("Futok");
-     document.getElementById('eredmeny2').value =  bemenet.value;
-    output = bemenet.value;
+            var last = bemenet.value.charAt( field.value.length-1 );
+            ///var c= String.fromCharCode(field.keyCode);
+            //var last = c.match(/\w/);
+            if( last == "s"){
+                alert("A teljel szöveg: " + field.value);
+                document.getElementById('eredmeny2').value = last;
+            }
+            else{
+                alert("A leütött karakter:" + last);
+                document.getElementById('eredmeny2').value =  bemenet.value;
+            }  
+              
+              
+              
+              
+              
+   // alert("Futok");
+     
+   // output = bemenet.value;
   }
 
   

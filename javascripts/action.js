@@ -58,19 +58,13 @@ var myHandler = (function () {
             }  
               
               
-              
-              
-              
-   // alert("Futok");
-     
-             output = bemenet.value;
+            // output = bemenet.value;
   }
 
   
 
   function setUp() {
     bemenet = document.getElementById('text2');
-   // output = document.getElementById('eredmeny2').value;
     bemenet.addEventListener("keyup", gombnyomas);
   }
   return setUp;

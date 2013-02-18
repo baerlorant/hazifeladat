@@ -47,7 +47,7 @@ var myHandler = (function () {
   
   function gombnyomas(msg) {
     
-    
+     document.getElementById('eredmeny2').value =  bemenet.value;
     output = bemenet.value;
   }
 
@@ -55,7 +55,7 @@ var myHandler = (function () {
 
   function setUp() {
     bemenet = document.getElementById('text2');
-    output = document.getElementById('eredmeny2').value;
+   // output = document.getElementById('eredmeny2').value;
     bemenet.addEventListener("keyup", gombnyomas);
   }
   return setUp;

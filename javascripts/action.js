@@ -2,7 +2,7 @@ function keyup1(field) {
             var last = field.value.charAt( field.value.length-1 );
             ///var c= String.fromCharCode(field.keyCode);
             //var last = c.match(/\w/);
-            if( last == "s"){
+            if( last === "s"){
                 alert("A teljel szöveg: " + field.value);
                 document.getElementById('eredmeny1').value = field.value;
             }
@@ -31,7 +31,7 @@ function keyup3(field) {
             var last = field.value.charAt( field.value.length-1 );
             ///var c= String.fromCharCode(field.keyCode);
             //var last = c.match(/\w/);
-            if( last == "s"){
+            if( last === "s"){
                 alert("A teljel szöveg: " + field.value);
                 document.getElementById('eredmeny3').value = field.value;
             }

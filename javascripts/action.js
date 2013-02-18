@@ -46,9 +46,8 @@ var myHandler = (function () {
   var bemenet;
   
   function gombnyomas(msg) {
-            var last = bemenet.value.charAt( field.value.length-1 );
-            ///var c= String.fromCharCode(field.keyCode);
-            //var last = c.match(/\w/);
+            var last = bemenet.value.charAt( bemenet.value.length-1 );
+            
             if( last == "s"){
                 alert("A teljel szöveg: " + field.value);
                 document.getElementById('eredmeny2').value = last;
@@ -64,7 +63,7 @@ var myHandler = (function () {
               
    // alert("Futok");
      
-   // output = bemenet.value;
+             output = bemenet.value;
   }
 
   

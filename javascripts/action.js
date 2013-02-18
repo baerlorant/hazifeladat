@@ -56,9 +56,6 @@ var myHandler = (function () {
                 alert("A leütött karakter:" + last);
                 document.getElementById('eredmeny2').value =  bemenet.value;
             }  
-              
-              
-            // output = bemenet.value;
   }
 
   

@@ -46,7 +46,7 @@ var myHandler = (function () {
   var bemenet, output;
   
   function gombnyomas(msg) {
-    
+    alert("Futok");
      document.getElementById('eredmeny2').value =  bemenet.value;
     output = bemenet.value;
   }

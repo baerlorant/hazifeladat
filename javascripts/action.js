@@ -76,11 +76,11 @@ function changefizz(field) {
             var out = '';
             if(isNaN(field.value)){
                         if( parseInt(field.value) % 3 == 0)
-                            out = out.'fiz';
+                            out = out+'fiz';
                         if( parseInt(field.value) % 5 == 0)
-                            out = out.'buzz';
+                            out = out+'buzz';
                         if( parseInt(field.value) % 7 == 0)
-                            out = out.'bizz';
+                            out = out+'bizz';
             }
             else{
                         out = 'A bemenet nem szám';

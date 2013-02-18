@@ -81,6 +81,8 @@ function changefizz(field) {
                             out = out+'buzz';
                         if( parseInt(field.value) % 7 == 0)
                             out = out+'bizz';
+                        if( out === '')
+                            out = field.value;
             }
             else{
                         out = 'A bemenet nem szám';

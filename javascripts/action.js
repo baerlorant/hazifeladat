@@ -12,6 +12,7 @@ function keyup1(field) {
             }
 }
 
+/*
 function keyup2(field) {
             var last = field.value.charAt( field.value.length-1 );
             ///var c= String.fromCharCode(field.keyCode);
@@ -24,7 +25,7 @@ function keyup2(field) {
                 alert("A leütött karakter:" + last);
                 document.getElementById('eredmeny2').value = last;
             }
-}
+}*/
 
 function keyup3(field) {
             var last = field.value.charAt( field.value.length-1 );
@@ -39,3 +40,26 @@ function keyup3(field) {
                 document.getElementById('eredmeny3').value = last;
             }
 }
+
+
+var myHandler = (function () {
+  var bemenet, output;
+  
+  function gombnyomas(msg) {
+    
+    
+    output = bemenet.value;
+  }
+
+  
+
+  function setUp() {
+    bemenet = document.getElementById('text2');
+    output = document.getElementById('eredmeny2').value;
+    bemenet.addEventListener("keyup", gombnyomas);
+  }
+  return setUp;
+})();
+
+document.addEventListener('DOMContentLoaded', myHandler);
+

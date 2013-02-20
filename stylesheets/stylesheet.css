@@ -445,3 +445,18 @@ Small Device Styles
     list-style:none;
     float:left;
     }
+.almenuBar{
+    width:100%;
+    height:50px;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    }
+.alnav{
+    float:right;
+    margin-right:10px;}
+.alnav ul li{
+    list-style:none;
+    float:left;
+    }

@@ -92,10 +92,10 @@ function changefizz(field) {
 }
 
     
-function $_GET(q, s) {
+function $_GET(q,s) {
         s = s ? s : window.location.search;
-        var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i');
-        return (s=s.replace(/^?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
+        var re = new RegExp( '&' + q + '(?:=([^&]*))?(?=&|$)' , 'i' );
+        return (s=s.replace(/^\?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
 }
 
 

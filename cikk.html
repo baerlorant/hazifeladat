@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     
     <script type="text/javascript" src="javascripts/action.js"></script>
-
+    <script src="/js/jquery-1.3.2.js"></script>
+    
     <title>Hazifeladat</title>
   </head>
 
@@ -93,6 +94,12 @@
         else{
           txt.innerHTML='<h4>Báer Lóránt házifeladat cikkeit találja az alábbi lapon<br>az kívánt hetet válassza ki a menüpontból</h4>';
         }
+        
+        
+        $.get("www.google.com", function(response) { 
+        alert(response) 
+});
+        
         
      </script>
     

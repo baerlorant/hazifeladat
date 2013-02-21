@@ -62,7 +62,9 @@ var myHandler = (function () {
 
   function setUp() {
     bemenet = document.getElementById('text2');
-    bemenet.addEventListener("keyup", gombnyomas);
+    if(bemenet){
+            bemenet.addEventListener("keyup", gombnyomas);
+    }
   }
   return setUp;
 })();

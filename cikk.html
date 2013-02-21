@@ -14,7 +14,13 @@
   </head>
 
   <body>
-
+    
+     <script type="text/javascript">
+        alert($_GET('oldal'));
+        document.getElementById('eredmeny1').value = $_GET('oldal');    
+      
+    </script>    
+    
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -51,11 +57,7 @@
             </div>
         </div>
         
-    <script type="text/javascript">
-        alert($_GET('oldal'));
-        document.getElementById('eredmeny1').value = $_GET('oldal');    
-      
-    </script>    
+   
     <h3>Bármely gomb lenyomása során felugró ablakban kapjuk a lenyomott gombot</br>Az "s" betű hatására a összes leütött gombból álló szó jelenik meg</h3>
     
     <h4>Házifeladat1: </h4>

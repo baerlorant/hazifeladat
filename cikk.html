@@ -95,19 +95,15 @@
           txt.innerHTML='<h4>Báer Lóránt házifeladat cikkeit találja az alábbi lapon<br>az kívánt hetet válassza ki a menüpontból</h4>';
         }
         
-        var req = new XMLHttpRequest();  
-req.open('GET', 'http:/www.port.hu/', false);   
-req.send(null);  
-if(req.status == 200)  
-   dump(req.responseText);
+       var req = new XMLHttpRequest();  
+       req.open('GET', 'http:/www.port.hu/', false);   
+       req.send(null);  
+       if(req.status == 200)  
+            dump(req.responseText);
   
 </script>        
         
 
-<script>
-$.get("www.google.com", function(response) { alert(response) });
-</script>
-        
         
      
     

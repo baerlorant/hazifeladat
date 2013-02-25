@@ -1,7 +1,8 @@
 describe("changefizz", function(field){
   var i = 0;
-  var element = document.createElement("div");
+  var element = document.createElement("input");
   element.setAttribute("id", "fizz");
+  element.setAttribute("type", "text");
   
   beforeEach(function() {
      i =  i + 1;

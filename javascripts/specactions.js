@@ -1,11 +1,13 @@
 describe("changefizz", function(field){
-  field.value = 0;
+  var i = 0;
   
   beforeEach(function() {
-     field.value =  field.value + 1;
+     i =  i + 1;
   });
 
-  it("Test for: " + field.value, function() {
+  it("Test for: " + i, function() {
+    value = {value : i};
+    changefizz(value);
     expect(document.getElementById('fizz').value).toEqual("fizz");
   }); 
 

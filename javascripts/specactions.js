@@ -5,7 +5,7 @@ describe("changefizz", function(){
   element.setAttribute("id", "fizz");
   element.setAttribute("type", "text");
   
-  alert(document.getElementById("fizz"));
+  alert(document.getElementById('fizz'));
   
   /*beforeEach(function() {
      i =  i + 1;
@@ -16,7 +16,7 @@ describe("changefizz", function(){
       it("Test for: " + i, function() {
         value = {value : i};
         changefizz(value);
-        expect("fizz".value).toEqual(document.getElementById("fizz"));
+        expect("fizz").toEqual(document.getElementById('fizz').value);
       }); 
   }
 

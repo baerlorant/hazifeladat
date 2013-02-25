@@ -1,12 +1,12 @@
 describe("changefizz", function(field){
-  this.field = 0;
+  this.field.value = 0;
   
   beforeEach(function() {
     i = i + 1;
   });
 
-  it("Test for: " + i, function() {
-    expect(player.currentlyPlayingSong).toEqual(document.getElementById('fizz').value);
+  it("Test for: " + this.field.value, function() {
+    expect(document.getElementById('fizz').value).toEqual("fizz");
   }); 
 
 });

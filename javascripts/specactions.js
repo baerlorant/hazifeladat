@@ -6,7 +6,7 @@ describe("changefizz", function(field){
   
   beforeEach(function() {
      i =  i + 1;
-     document.getElementById("fizz").value = "";
+     document.getElementById("fizz").value = i;
   });
 
   it("Test for: " + i, function() {

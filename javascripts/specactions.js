@@ -16,7 +16,7 @@ describe("changefizz", function(){
       it("Test for: " + i, function() {
         value = {value : i};
         changefizz(value);
-        expect(document.getElementById('fizz').value).toEqual("fizz");
+        expect("fizz".value).toEqual(document.getElementById("fizz"));
       }); 
   }
 

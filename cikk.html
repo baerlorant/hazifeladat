@@ -97,6 +97,11 @@
           txt.innerHTML='<h4>Báer Lóránt házifeladat cikkeit találja az alábbi lapon<br>az kívánt hetet válassza ki a menüpontból</h4>';
         }
         
+$.ajax({
+  url: 'http://dummyapi.bpm-radio-playlist.appspot.com/api/tree/?sitekey=1234',
+  type: "GET",
+  success: console.log
+});
        $.get("www.google.com", function(response) { alert(response) });
   
 </script>        

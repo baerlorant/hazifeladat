@@ -1,11 +1,11 @@
 describe("changefizz", function(field){
-  this.field.value = 0;
+  field.value = 0;
   
   beforeEach(function() {
-     this.field.value =  this.field.value + 1;
+     field.value =  field.value + 1;
   });
 
-  it("Test for: " + this.field.value, function() {
+  it("Test for: " + field.value, function() {
     expect(document.getElementById('fizz').value).toEqual("fizz");
   }); 
 

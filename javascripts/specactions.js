@@ -2,7 +2,7 @@ describe("changefizz", function(field){
   this.field.value = 0;
   
   beforeEach(function() {
-    i = i + 1;
+     this.field.value =  this.field.value + 1;
   });
 
   it("Test for: " + this.field.value, function() {

@@ -1,4 +1,4 @@
-describe("changefizz", function(field){
+describe("changefizz", function(){
   var i = 0;
   var element = document.createElement("input");
   element.setAttribute("id", "fizz");

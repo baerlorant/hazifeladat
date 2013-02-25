@@ -9,10 +9,12 @@ describe("changefizz", function(field){
      document.getElementById("fizz").value = i;
   });
 
-  it("Test for: " + i, function() {
-    value = {value : i};
-    changefizz(value);
-    expect(document.getElementById('fizz').value).toEqual("fizz");
-  }); 
+  for(var j=0;j<100;j++){
+      it("Test for: " + i, function() {
+        value = {value : i};
+        changefizz(value);
+        expect(document.getElementById('fizz').value).toEqual("fizz");
+      }); 
+  }
 
 });

@@ -5,6 +5,8 @@ describe("changefizz", function(){
   element.setAttribute("id", "fizz");
   element.setAttribute("type", "text");
   
+  alert(element);
+  
   /*beforeEach(function() {
      i =  i + 1;
      document.getElementById("fizz").value = i;

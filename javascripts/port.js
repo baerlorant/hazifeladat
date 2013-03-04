@@ -43,6 +43,6 @@
 
   })();
 
-  //window.Port = Port;
+  window.Port = Port;
 
 }).call(this);

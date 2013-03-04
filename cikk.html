@@ -97,9 +97,46 @@
         }
         else if(oldal == "4alkalom"){
           txt.innerHTML='<h4>Last fm feladat</h4>'+
-            '<form name="f4"><input type="text" onchange="changefizz(this);" name="fizzin"><input type="text" id="fizz" name="eredmenyfizz" disabled>'+
-            '<h1>A teszt megmondhatja hogy mi a hiba bár néha túloz:)))</h1>'+
-            '<a href="test.html">Teszt oldal link</a>';
+                        '<form><input id="location" type="text">'+
+                        '<button type="submit" id="search">Search location</button>'+
+                        '<button type="submit" id="submit">Get weather</button></form>';
+        
+            Port.key = "20d68f981afc4659";
+          	var container = document.getElementById('mydiv');
+          	//var input = $('#location');
+          	function resetContainer() {
+          		container.innerHTML = '';
+          	}
+          	function showLocations( data ) {
+          		_.each(data.RESULTS, function(loc) {
+          			var p = document.createElement('p');
+          			p.innerHTML = loc.name + ': ' + loc.l;
+          			container.appendChild(p);
+          		})
+          	}
+          	function showFoci( data ) {
+          		_.each(data.forecast.simpleforecast.forecastday, function(fc) {
+          			var h2 = document.createElement('h2');
+          			h2.innerHTML = fc.date.weekday + fc.date.year + fc.date.month + fc.date.day;
+          			var p = document.createElement('p');
+          			p.innerHTML = fc.conditions;
+          			var img = document.createElement('img');
+          			img.src = fc.icon_url;
+          			container.appendChild(h2);
+          			container.appendChild(p);
+          			container.appendChild(img);
+          		})
+          	}
+          	$('#search').click(function(ev){
+          		ev.preventDefault();
+          		Port.getLocation( input.val(), showLocations );
+          	});
+          	$('#submit').click(function(ev){
+          		ev.preventDefault();
+          		Port.getWeather( input.val(), showWeather );
+          	});
+          	
+
         }
         else{
           txt.innerHTML='<h4>Báer Lóránt házifeladat cikkeit találja az alábbi lapon<br>az kívánt hetet válassza ki a menüpontból</h4>';
